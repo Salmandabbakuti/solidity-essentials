@@ -9,11 +9,11 @@ string name;
 uint8 age;
 bytes32 occupation;
 uint256 ContactNumber;
-}
+ }
 mapping (address => learner)learnerInfo;
 constructor() public {
-owner = msg.sender
-};
+owner = msg.sender;
+ }
 
 modifier onlyOwner {
 require(msg.sender==owner);
@@ -28,7 +28,8 @@ now;
 function kill() public {
 if (msg.sender==owner)
 selfdestruct(owner);
-}
+  }
 function showOwners() public returns (uint) {
 return owner;
+   }
 }
