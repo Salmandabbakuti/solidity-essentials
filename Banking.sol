@@ -4,6 +4,7 @@ contract bank {
     address owner;
     uint256 balances;
     constructor() public {
+    //assigning msg.sender as owner during deployment only*
        owner=msg.sender;
     }
     
@@ -24,7 +25,7 @@ contract bank {
         // nothing else to do!
     }
 
-    function getBalance() private view returns (uint256) {
+    function getBalance() public view returns (uint256) {
         return address(this).balance;
     }
 }
