@@ -25,8 +25,7 @@ learners.push(msg.sender);
 numberOfLearners++;
 now;
 
-function kill() public {
-if (msg.sender==owner)
+function kill() public onlyOwner() {
 selfdestruct(owner);
   }
 function showOwners() public returns (uint) {
