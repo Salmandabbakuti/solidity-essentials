@@ -24,6 +24,7 @@ require (msg.value= 0.1 ether);
 learners.push(msg.sender);
 numberOfLearners++;
 now;
+}
 
 function kill() public onlyOwner() {
 selfdestruct(owner);
