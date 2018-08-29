@@ -18,6 +18,8 @@ owner = msg.sender;
 modifier onlyOwner {
 require(msg.sender==owner);
 _;
+}
+
 
 function join() public payable {
 require (msg.value= 0.1 ether);
