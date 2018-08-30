@@ -1,31 +1,38 @@
-pragma solidity ^0.4.22;
+pragma solidity ^0.4.24;
+
+contract Calculator {
  
-contract arithematic {
+function sum(uint _a, uint _b) public returns (uint) {
 
-
-
-  function Sum(uint a, uint b) public returns (uint) {
-
-     return a + b;
-
+      return _a + _b;
         }
 
-  function Multiply(uint a, uint b) public returns (uint) {
+ function subtract(uint _a,uint _b) public returns (uint) {
 
-     return a * b;
+ return _a - _b;
+         }
+         
+function multiply(uint _a, uint _b) public returns (uint) {
 
+
+     return _a * _b;
        }
 
-  function divison(uint a, uint b) public returns (uint) {
+ function divison(uint _a, uint _b) public returns (uint) {
 
-     return a / b;
+  return _a / _b;
+        }
 
-       }
+function square( uint _a) public returns(uint) {
+    return _a*_a;
+        }
 
-  function sub(uint a, uint b) public returns (uint) {
+function getDate() public returns(uint) {
+     return now;
+        }
 
-     return a - b;
-
-       }
-
+function exponent(uint a,uint b) public returns(uint) {
+    return a**b;
+        }
+      
 }
