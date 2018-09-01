@@ -31,7 +31,7 @@ now;
 function kill() public onlyOwner() {
 selfdestruct(owner);
   }
-function showOwners() public returns (uint) {
+function showOwners() public returns(address) {
 return owner;
    }
 }
