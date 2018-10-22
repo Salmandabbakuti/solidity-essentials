@@ -5,16 +5,13 @@ contract counter {
 
 function increment() public{
     counter++;
-    
-      } 
+             } 
 
 function decrement() public{
         counter--;
-        
-       }
+              }
  function getcounter() public constant returns(uint256){
     
      return counter;
- 
-       }
+                }
  }
